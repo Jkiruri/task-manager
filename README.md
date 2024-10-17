@@ -1,26 +1,84 @@
-# Lumen PHP Framework
+# Task Management System API
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/lumen)](https://packagist.org/packages/laravel/lumen-framework)
+This is a simple RESTful API for a Task Management System built using Lumen. The API allows users to manage tasks by performing basic CRUD (Create, Read, Update, Delete) operations.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## Table of Contents
 
-> **Note:** In the years since releasing Lumen, PHP has made a variety of wonderful performance improvements. For this reason, along with the availability of [Laravel Octane](https://laravel.com/docs/octane), we no longer recommend that you begin new projects with Lumen. Instead, we recommend always beginning new projects with [Laravel](https://laravel.com).
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Database Configuration](#database-configuration)
+- [Running the Application](#running-the-application)
+- [API Endpoints](#api-endpoints)
+- [Testing with Postman](#testing-with-postman)
+- [Validation](#validation)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Official Documentation
+## Features
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+- Create, read, update, and delete tasks
+- Filter tasks by status and due date
+- Search for tasks by title
+- Pagination for task listing
 
-## Contributing
+## Technologies Used
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- PHP 8.x
+- Lumen (Micro-framework by Laravel)
+- PostgreSQL (Database)
+- Composer (Dependency Management)
 
-## Security Vulnerabilities
+## Installation
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+### Prerequisites
 
-## License
+Before you begin, ensure you have the following installed:
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- PHP (8.x)
+- Composer
+- PostgreSQL
+- Git
+
+### Steps
+
+1. **Clone the repository:**
+
+   Open your terminal and run the following command:
+
+   ```bash
+   git clone 
+   cd task-management-api
+
+2. **Install dependencies:**
+    Make sure you have Composer installed. Run the following command to install the necessary dependencies:
+    `composer install`
+
+3. **Set up your environment file:**
+    Copy the .env.example file to .env using the following command
+    `cp .env.example .env`
+
+4. **Configure the environment:**
+    Open the .env file and set up your database connection details:
+    DB_CONNECTION=pgsql
+    DB_HOST=127.0.0.1
+    DB_PORT=5432
+    DB_DATABASE=your_database_name
+    DB_USERNAME=your_database_user
+    DB_PASSWORD=your_database_password
+
+5. **Create the database:**
+    Open your PostgreSQL command line or any GUI tool and create a new database for your project. For example:
+    `CREATE DATABASE task_management;`
+
+6. **Run migrations:**
+
+    Create the tasks table in your database using the following command
+
+    `php artisan migrate`
+
+7. **Running the Application:**
+
+    To run the application, you can use the built-in PHP server. Make sure you are in the root directory of your project and run:
+    `php -S localhost:8000 -t public`
+
