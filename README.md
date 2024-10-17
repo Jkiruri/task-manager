@@ -2,19 +2,6 @@
 
 This is a simple RESTful API for a Task Management System built using Lumen. The API allows users to manage tasks by performing basic CRUD (Create, Read, Update, Delete) operations.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Database Configuration](#database-configuration)
-- [Running the Application](#running-the-application)
-- [API Endpoints](#api-endpoints)
-- [Testing with Postman](#testing-with-postman)
-- [Validation](#validation)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - Create, read, update, and delete tasks
