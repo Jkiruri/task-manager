@@ -47,8 +47,8 @@ Before you begin, ensure you have the following installed:
    Open your terminal and run the following command:
 
    ```bash
-   git clone 
-   cd task-management-api
+   git clone https://github.com/Jkiruri/task-manager
+   cd task-manager
 
 2. **Install dependencies:**
     Make sure you have Composer installed. Run the following command to install the necessary dependencies:
