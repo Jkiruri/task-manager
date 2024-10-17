@@ -60,6 +60,11 @@ $app->singleton(
 */
 
 $app->configure('app');
+$app->withFacades();
+$app->withEloquent();
+if (class_exists(\Illuminate\Database\DatabaseServiceProvider::class)) {
+    $app->register(\Illuminate\Database\DatabaseServiceProvider::class);
+}
 
 /*
 |--------------------------------------------------------------------------
